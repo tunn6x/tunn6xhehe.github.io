@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ksrv.lol</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      background: url('7aedbfae-00be-4fd6-a519-f8a8a8c33f41.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .glow {
+      text-shadow: 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;
+    }
+
+    .box {
+      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #ccc;
+      margin: 10px;
+      max-width: 320px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      margin-top: 10px;
+      border-radius: 12px;
+    }
+
+    .player {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .stats {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.7rem;
+      color: #777;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Particle canvas */
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <div class="container content-wrapper">
+    <div class="box">
+      <img class="profile-pic" src="PROFILE_IMAGE_URL" alt="Profile" />
+      <h2 class="glow">ksrv ✧</h2>
+      <p class="stats">VALORANT</p>
+      <p>❤️❤️💎 x5 Access</p>
+      <p>👁️ 4,919 views</p>
+    </div>
+
+    <div class="box">
+      <iframe src="YOUR_SPOTIFY_EMBED_LINK" width="300" height="80" frameBorder="0" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="box player">
+      <p class="glow">🎧 Bengier kurwy v2</p>
+      <p>00:26 — 00:59 ⏸️ ▶️</p>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 ksrv.lol • Made with 💀</footer>
+
+  <!-- Particles.js loader -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      background: { color: "transparent" },
+      particles: {
+        number: { value: 50 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 2 },
+        move: { enable: true, speed: 0.5 }
+      }
+    });
+  </script>
+</body>
+</html>
